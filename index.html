@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer-box">
+      <p class="timer">
+        <span class="mm2">01</span>:<span class="ss2">00</span>
+      </p>
+    </div>
+    <form name="buttons" class="buttons">
+      <input
+        type="button"
+        value="Start game!"
+        class="start-btn btn"
+        onclick="timerStart()"
+      />
+      <input
+        type="button"
+        value="Check result"
+        class="check-btn btn"
+        onclick="stop()"
+      />
+      <input
+        type="button"
+        value="New game"
+        class="new-btn btn"
+        onclick="random()"
+      />
+    </form>
+    <div class="game">
+      <div class="block left-block">
+        <div class="img"><h1>1</h1></div>
+        <div class="img"><h1>2</h1></div>
+        <div class="img"><h1>3</h1></div>
+        <div class="img"><h1>4</h1></div>
+        <div class="img"><h1>5</h1></div>
+        <div class="img"><h1>6</h1></div>
+        <div class="img"><h1>7</h1></div>
+        <div class="img"><h1>8</h1></div>
+        <div class="img"><h1>9</h1></div>
+        <div class="img"><h1>10</h1></div>
+        <div class="img"><h1>11</h1></div>
+        <div class="img"><h1>12</h1></div>
+        <div class="img"><h1>13</h1></div>
+        <div class="img"><h1>14</h1></div>
+        <div class="img"><h1>15</h1></div>
+        <div class="img"><h1>16</h1></div>
+      </div>
+      <div class="block right-block">
+        <div class="img-r"><h1>1</h1></div>
+        <div class="img-r"><h1>2</h1></div>
+        <div class="img-r"><h1>3</h1></div>
+        <div class="img-r"><h1>4</h1></div>
+        <div class="img-r"><h1>5</h1></div>
+        <div class="img-r"><h1>6</h1></div>
+        <div class="img-r"><h1>7</h1></div>
+        <div class="img-r"><h1>8</h1></div>
+        <div class="img-r"><h1>9</h1></div>
+        <div class="img-r"><h1>10</h1></div>
+        <div class="img-r"><h1>11</h1></div>
+        <div class="img-r"><h1>12</h1></div>
+        <div class="img-r"><h1>13</h1></div>
+        <div class="img-r"><h1>14</h1></div>
+        <div class="img-r"><h1>15</h1></div>
+        <div class="img-r"><h1>16</h1></div>
+      </div>
+    </div>
+
+    <div class="modal still-have">
+      <hr />
+      <h2 id="still">
+        You still have time, you sure? 00:<span id="time">00</span>
+      </h2>
+      <hr />
+      <form>
+        <input type="button" value="close" class="btn close" />
+        <input type="button" value="check" class="btn check" />
+        <input type="button" value="close" class="btn closeFinal" />
+      </form>
+    </div>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

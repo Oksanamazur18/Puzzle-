@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  font-size: 70px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px 0 70px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.btn:hover {
+  box-shadow: rgb(220, 100, 100) 0px 2px 4px 0px,
+    rgb(220, 100, 100) 0px 2px 16px 0px;
+}
+
+.disabled {
+  background-color: rgb(220, 100, 100);
+}
+
+.game {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.block {
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  box-shadow: black 0px 2px 4px 0px, black 0px 2px 16px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 25%;
+  height: 25%;
+  background-image: url(./img/gettyimages-1210515464-612x612.jpg);
+}
+.img1 {
+  background-position: 20.5% 0%;
+}
+
+.img2 {
+  background-position: 40% 0;
+}
+.img3 {
+  background-position: 59.5% 0;
+}
+
+.img4 {
+  background-position: 79% 0;
+}
+.img5 {
+  background-position: 20.5% 35%;
+}
+.img6 {
+  background-position: 40% 35%;
+}
+.img7 {
+  background-position: 59.5% 35%;
+}
+.img8 {
+  background-position: 79% 35%;
+}
+.img9 {
+  background-position: 20.5% 70%;
+}
+.img10 {
+  background-position: 40% 70%;
+}
+.img11 {
+  background-position: 59.5% 70%;
+}
+.img12 {
+  background-position: 79% 70%;
+}
+.img13 {
+  background-position: 20.5% 105%;
+}
+.img14 {
+  background-position: 40% 105%;
+}
+
+.img15 {
+  background-position: 59.5% 105%;
+}
+.img16 {
+  background-position: 79% 105%;
+}
+
+h1 {
+  color: aliceblue;
+  opacity: 0;
+}
+
+.img-r {
+  width: 25%;
+  height: 25%;
+}
+
+.active {
+  background-color: lightgray;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.modal {
+  width: 500px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  padding: 20px 0 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+#still {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.check {
+  background-color: green;
+}
+
+.close {
+  margin-left: 123px;
+}
+
+.closeFinal {
+  margin-left: 203px;
+  display: none;
+}
